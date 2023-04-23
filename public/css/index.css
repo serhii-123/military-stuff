@@ -12,6 +12,10 @@ html, body, .wrapper {
     background-color: rgb(64, 64, 64);
 }
 
+.wrapper__header {
+    position: relative;
+}
+
 .header {
     display:flex;
     flex-direction: column;
@@ -62,6 +66,28 @@ html, body, .wrapper {
     color: rgb(150, 150, 200);
 }
 
+.header__mobile-nav-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.mobile-nav-btn {
+    display: none;
+    background-color: rgb(64, 64, 64);
+    border: 0px;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.mobile-nav-btn__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .main {
     padding: 0 20px;
 }
@@ -102,7 +128,6 @@ html, body, .wrapper {
 }
 
 .main__most-popular {
-    width: 800px;
     margin-bottom: 20px;
     background-color: rgb(32, 32, 32);
 }
@@ -126,7 +151,7 @@ html, body, .wrapper {
 }
 
 .most-popular__product-info {
-    width: 200px;
+    width: 250px;
 }
 
 .most-popular__line {
@@ -200,4 +225,77 @@ html, body, .wrapper {
 .new-products__products-container {
     display: flex;
     justify-content: center;
+}
+
+.new-products__product-info {
+    width: 250px;
+}
+
+.new-products__line {
+    width: 4px;
+    height: auto;
+    margin: 0 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(32, 32, 32);
+}
+.footer {
+    padding: 20px;
+    background-color: rgb(16, 16, 16);
+}
+
+.footer__text {
+    margin-bottom: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(200, 200, 200);
+}
+
+.footer__text:last-child {
+    margin: 0;
+}
+
+@media(min-width: 961px) and (max-width: 1200px) {
+    .mobile-nav-btn {
+        display: block;
+    }
+
+    .main__container {
+        justify-content: center;
+    }
+
+    .categories-nav {
+        display: none;
+    }
+}
+
+@media(min-width: 641px) and (max-width:960px) {
+    .most-popular__product-info:last-child {
+        display: none;
+    }
+
+    .most-popular__line:last-of-type {
+        display: none;
+    }
+
+    .new-products__product-info:last-child {
+        display: none
+    }
+
+    .new-products__line:last-of-type {
+        display:none;
+    }
+}
+
+@media(max-width: 640px) {
+    .header__mobile-nav-btn {
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+    }   
+
+    .mobile-nav-btn {
+        border: 1px solid rgb(32, 32, 32);
+    }
 }
