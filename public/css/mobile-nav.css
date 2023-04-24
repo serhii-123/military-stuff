@@ -1,0 +1,38 @@
+.mobile-nav {
+    height: 100%;
+    padding: 60px 10px 10px;
+    border-left: 2px solid rgb(200, 200, 200);
+    background-color: rgb(64, 64, 64);
+}
+
+.mobile-nav__close-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.mobile-nav__list {
+    list-style-type: none;
+}
+
+.mobile-nav__item {
+    margin-bottom: 5px;
+    padding: 15px;
+    background-color: rgb(32, 32, 32);
+}
+
+.mobile-nav__last-child {
+    margin: 0;
+}
+
+.mobile-nav__link {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+}

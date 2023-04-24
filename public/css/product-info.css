@@ -1,0 +1,40 @@
+.product-info__name {
+    margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(200, 200, 200);
+}
+
+.product-info__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.product-info__price {
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(200, 200, 200);
+}
+
+.product-info__btn {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    padding: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(200, 200, 200);
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}

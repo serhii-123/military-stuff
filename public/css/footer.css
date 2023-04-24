@@ -1,0 +1,16 @@
+.footer {
+    padding: 20px;
+    background-color: rgb(16, 16, 16);
+}
+
+.footer__text {
+    margin-bottom: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(200, 200, 200);
+}
+
+.footer__text:last-child {
+    margin: 0;
+}
