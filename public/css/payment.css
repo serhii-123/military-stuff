@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding: 10px;
+    background-color: rgb(64, 64, 64);
+    background-size: 100% auto;
+    background-position: center;
+}
+
+@media(max-aspect-ratio: 5.5 / 3) {
+    .wrapper {
+        background-size: auto 100%;
+    }
+}
+
+.wrapper__form {
+    width: 400px;
+}
+
+.form {
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border: 2px solid rgba(32, 32, 32);
+    border-radius: 5px;
+}
+
+.form__data-block {
+    margin-bottom: 30px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.form__text-input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.form__text-input:focus {
+    outline: none;
+    border-bottom-color: rgb(100, 100, 255);
+}
+
+.form__textarea {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.form__textarea:focus {
+    outline: none;
+    border-color: rgb(100, 100, 255);
+}
+
+.form__btns-block {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.form__btn {
+    flex: 1;
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+    transition: 0.3s;
+}
+
+.form__btn:hover {
+    background-color: rgb(100, 100, 255);
+}
+
+.form__bottom-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.card-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-data__number-block {
+    width: 100%;
+}
+
+.card-data__date-block, .card-block__cvv-block {
+    flex: 1;
+}
+
+.card-data__label {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(200, 200, 200);
+}
