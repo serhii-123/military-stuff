@@ -33,9 +33,19 @@
     }
 }
 
+@media(max-width: 860px) {
+    .main__product-block {
+        width: 100%;
+    }
+}
+
 @media(max-width: 640px) {
     .main__most-popular {
         width: 90%;
+    }
+
+    .main__product-block {
+        width: 80%;
     }
 }
 

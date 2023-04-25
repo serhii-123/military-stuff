@@ -1,6 +1,7 @@
 .product-block {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 30px;
 }
 
@@ -37,4 +38,26 @@
 
 .product-block__buy-block {
     width: 150px;
+}
+
+@media (max-width: 640px) {
+    .product-block {
+        flex-wrap: wrap;
+    }
+
+    .product-block__img {
+        width: 100%;
+    }
+
+    .product-block__name {
+        font-size: 22px;
+    }
+    
+    .product-block__description {
+        font-size: 18px;
+    }
+
+    .product-block__price {
+        font-size: 18px;
+    }
 }
