@@ -1,0 +1,18 @@
+.products-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.products-list__product-card {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 580px) {
+    .products-list__product-card {
+        width: 300px;
+    }
+}

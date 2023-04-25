@@ -1,8 +1,14 @@
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: rgb(64, 64, 64);
 }
 
 .wrapper__header {
-    min-height: 100%;
     position: relative;
+}
+
+.wrapper__footer {
+    margin: auto 0 0;
 }

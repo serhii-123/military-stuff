@@ -1,5 +1,5 @@
 .main {
-    padding: 0 20px;
+    padding: 20px 20px;
 }
 
 .main__container {
@@ -16,6 +16,10 @@
 .main__most-popular {
     margin-bottom: 20px;
     background-color: rgb(32, 32, 32);
+}
+
+.main__products-list {
+    width: 800px;
 }
 
 @media(max-width: 1200px) {

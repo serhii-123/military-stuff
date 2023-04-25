@@ -16,7 +16,7 @@
     justify-content: center;
 }
 
-.most-popular__product-info {
+.most-popular__product-card {
     width: 250px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 @media(max-width:960px) {
-    .most-popular__product-info:last-child {
+    .most-popular__product-card:last-child {
         display: none;
     }
 
@@ -44,7 +44,7 @@
         font-size: 22px;
     }
 
-    .most-popular__product-info {
+    .most-popular__product-card {
         width: auto;
     }
 

@@ -1,4 +1,10 @@
-.product-info__name {
+.product-card {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+}
+
+.product-card__name {
     margin-bottom: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
@@ -7,7 +13,7 @@
     color: rgb(200, 200, 200);
 }
 
-.product-info__img {
+.product-card__img {
     display: block;
     width: 100%;
     height: auto;
@@ -15,7 +21,7 @@
     border-radius: 5px;
 }
 
-.product-info__price {
+.product-card__price {
     margin-bottom: 10px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
@@ -24,7 +30,7 @@
     color: rgb(200, 200, 200);
 }
 
-.product-info__btn {
+.product-card__btn {
     display: block;
     width: 160px;
     margin: 0 auto;

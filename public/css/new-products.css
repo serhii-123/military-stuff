@@ -21,7 +21,7 @@
     justify-content: center;
 }
 
-.new-products__product-info {
+.new-products__product-card {
     width: 250px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 @media(max-width:960px) {
-    .new-products__product-info:last-child {
+    .new-products__product-card:last-child {
         display: none
     }
 
@@ -50,7 +50,7 @@
         flex-direction: column;
     }
 
-    .new-products__product-info {
+    .new-products__product-card {
         width: auto;
     }
 
