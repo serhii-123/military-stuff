@@ -1,0 +1,11 @@
+.contact-data__text {
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(200, 200, 200);
+}
+
+.contact-data__text:last-child {
+    margin: 0;
+}
