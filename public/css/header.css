@@ -15,6 +15,11 @@
     color: rgb(200, 200, 200)
 }
 
+.header__heading-link {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+}
+
 .header__additional-text {
     margin-bottom: 20px ;
     font-family: 'Roboto Condensed', sans-serif;
