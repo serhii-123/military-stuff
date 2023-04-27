@@ -1,15 +1,14 @@
-const koa = require('koa');
-const path = require('path');
-const serve = require('koa-static');
-const jwt = require('jsonwebtoken');
+const express = require('express');
+const hbs = require('hbs');
+const mysql = require('mysql2');
+const homeRouter = require('./routers/home-router');
+const categoriesRouter = require('./routers/categories-router');
+const server = express();
 
-const app = new koa();
-const staticDirPath = path.join(__dirname, 'public');
+server.use(express.static(__dirname + '/public'));
+server.set('view engine', 'hbs');
 
-app.use(serve(staticDirPath));
+server.use('/', homeRouter);
+server.use('/categories', categoriesRouter);
 
-app.use(async ctx => {
-    ctx.body = 'sus';
-});
-
-app.listen(80, '192.168.0.109');
+server.listen(80);
