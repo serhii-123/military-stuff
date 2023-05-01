@@ -14,7 +14,7 @@ INSERT INTO product (
 	"LBX Armatus II Plate Carrier - це низькопрофільний носій для плит, який пропонує модульність з різними панелями залежно від ваших потреб.",
     "plate-carriers",
     10500,
-    "LBX_TACTICAL_ARMATUS_2_PLATE_CARRIER",
+    "LBX_TACTICAL_ARMATUS_2_PLATE_CARRIER.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -37,7 +37,7 @@ INSERT INTO product (
     Система QRC модульна, адаптована та розроблена для комфорту протягом усього дня.",
     "plate-carriers",
     11700,
-    "DFNDR_QUICK_RELEASE_PLATE_CARRIER",
+    "DFNDR_QUICK_RELEASE_PLATE_CARRIER.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -57,7 +57,7 @@ INSERT INTO product (
 	"Представляємо новий Sentinel Plate Carrier, який можна придбати окремо тут або в упаковці з бронепластинами III або III рівня +.",
     "plate-carriers",
     8700,
-    "SPARTAN_ARMOR_SYSTEMS_SENTINEL_PLATE_CARRIER",
+    "SPARTAN_ARMOR_SYSTEMS_SENTINEL_PLATE_CARRIER.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -80,7 +80,7 @@ INSERT INTO product (
     Покращений легким ламінатом Squadron з лазерним різанням над корпусом Cordura 500D, плитоноска Leonidas Legend побудована довговічно",
     "plate-carriers",
     16500,
-    "SPARTAN_ARMOR_SYSTEMS_LEONIDAS_LEGEND_PLATE_CARRIER",
+    "SPARTAN_ARMOR_SYSTEMS_LEONIDAS_LEGEND_PLATE_CARRIER.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -103,7 +103,7 @@ INSERT INTO product (
     який забезпечує його власнику оптимальний комфорт протягом тривалого періоду часу.",
     "plate-carriers",
     16500,
-    "PROTECT_THE_FORCE_B-COOL_CONCEALABLE_PLATE_CARRIER",
+    "PROTECT_THE_FORCE_B-COOL_CONCEALABLE_PLATE_CARRIER.jpg",
     (SELECT id
     FROM inventory
     order by id desc

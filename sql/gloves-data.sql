@@ -16,7 +16,7 @@ INSERT INTO product (
     які легкі, зручні, добре захищають руку і забезпечують надійний захват.",
     "gloves",
     1600,
-    "Mechanix_Wear_M-Pact_Covert_Tactical_Gloves_Black",
+    "Mechanix_Wear_M-Pact_Covert_Tactical_Gloves_Black.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -38,7 +38,7 @@ INSERT INTO product (
 	які легкі, зручні, добре захищають руку і забезпечують надійний захват.",
     "gloves",
     1600,
-    "Mechanix_Wear_M-Pact_MultiCam",
+    "Mechanix_Wear_M-Pact_MultiCam.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -60,7 +60,7 @@ INSERT INTO product (
 	які легкі, зручні, добре захищають руку і забезпечують надійний захват.",
     "gloves",
     1600,
-    "Mechanix_Wear_M-Pact_Fingerless_Covert_Tactical_Gloves_Black",
+    "Mechanix_Wear_M-Pact_Fingerless_Covert_Tactical_Gloves_Black.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -80,7 +80,7 @@ INSERT INTO product (
 	"Топ за свої гроші",
     "gloves",
     11070,
-    "Latex_Gloves_Pro",
+    "Latex_Gloves_Pro.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -103,7 +103,7 @@ INSERT INTO product (
     який адаптується до форми руки, зберігаючи при цьому повітропроникність для зменшення потовиділення.",
     "gloves",
     1220,
-    "Mechanix_Wear_Specialty_0.5_High-Dexterity_Covert",
+    "Mechanix_Wear_Specialty_0.5_High-Dexterity_Covert.jpg",
     (SELECT id
     FROM inventory
     order by id desc

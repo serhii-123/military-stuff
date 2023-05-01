@@ -17,7 +17,7 @@ INSERT INTO product (
     Крім того, матеріал просочений шаром для підвищення стійкості до забруднень.",
     "pants",
     1500,
-    "Pentagon_BDU_2.0_Black",
+    "Pentagon_BDU_2.0_Black.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -40,7 +40,7 @@ INSERT INTO product (
     Чудовий дизайн, функціональний, виконаний з увагою до деталей гарантує виняткову довговічність в будь-яких умовах.",
     "pants",
     4400,
-    "Helikon_MBDU_MultiCam",
+    "Helikon_MBDU_MultiCam.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -62,7 +62,7 @@ INSERT INTO product (
     У моделі використовується плетіння RipStop, яке підвищує стійкість тканини до розривів.",
     "pants",
     1600,
-    "Texar_WZ10_Ripstop_Arid_MC_Camo",
+    "Texar_WZ10_Ripstop_Arid_MC_Camo.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -84,7 +84,7 @@ INSERT INTO product (
     тому в них поміститься багато речей. Також вони мають потайну кишеню з внутрішньої сторони.",
     "pants",
     2050,
-    "Helikon_M65_Nyco_Olive_Green",
+    "Helikon_M65_Nyco_Olive_Green.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -106,7 +106,7 @@ INSERT INTO product (
     а внутрішня сторона покрита шаром ПВХ, що робить штани повністю водонепроникними.",
     "pants",
     1900,
-    "Lemigo_997",
+    "Lemigo_997.jpg",
     (SELECT id
     FROM inventory
     order by id desc

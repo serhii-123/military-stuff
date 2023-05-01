@@ -19,7 +19,7 @@ INSERT INTO product (
     При необхідності ремінь можна вкоротити, відрізавши частину ремінця.",
     "belts",
     500,
-    "Blackfire_№9_Black",
+    "Blackfire_№9_Black.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -41,7 +41,7 @@ INSERT INTO product (
      Виготовлений з міцного поліестеру.",
     "belts",
     460,
-    "Helikon_Logo_Black",
+    "Helikon_Logo_Black.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -65,7 +65,7 @@ INSERT INTO product (
        Все це робить пояс поясний модульний Cobra відмінною альтернативою великим модульним поясам і рукавичкам.",
     "belts",
     3270,
-    "Helikon_Cobra_Black",
+    "Helikon_Cobra_Black.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -86,7 +86,7 @@ INSERT INTO product (
       Виготовлений з міцного та стійкого до пошкоджень поліестеру чорного кольору.",
     "belts",
     560,
-    "Mil_Tec_Security",
+    "Mil_Tec_Security.jpg",
     (SELECT id
     FROM inventory
     order by id desc
@@ -108,7 +108,7 @@ INSERT INTO product (
       даючи, в тому числі, можливість використовувати його при проходженні через ворота в аеропортах і подібних охоронюваних входах в будівлі.",
     "belts",
     750,
-    "Helikon_UTL_Urban_Tactical",
+    "Helikon_UTL_Urban_Tactical/jpg",
     (SELECT id
     FROM inventory
     order by id desc
