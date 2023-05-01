@@ -29,6 +29,7 @@ create table product(
     `name` text,
     `description` text,
     category text,
+    price int,
     image_name text,
     inventory_id int,
     primary key (id),

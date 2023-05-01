@@ -40,11 +40,11 @@
                 </ul>
             </nav>
             <button class="header__mobile-nav-btn mobile-nav-btn mobile-nav-btn_disabled">
-                <img src="../img/menu-icon.svg" alt="" class="mobile-nav-btn__img">
+                <img src="../img/icons/menu-icon.svg" alt="" class="mobile-nav-btn__img">
             </button>
             <nav class="header__mobile-nav mobile-nav">
                 <button class="mobile-nav__close-btn close-btn">
-                    <img src="../img/close.svg" alt="" class="close-btn__img">
+                    <img src="../img/icons/close.svg" alt="" class="close-btn__img">
                 </button>
                 <ul class="mobile-nav__list">
                     <li class="mobile-nav__item">
@@ -93,42 +93,14 @@
                     </ul>    
                 </nav>
                 <section class="main__products-list products-list">
+                    {{#each products}}
                     <section class="products-list__product-card product-card">
-                        <p class="product-card__name">Lorem ipsum dorem borem</p>
-                        <img src="../img/mtac.jpg" alt="" class="product-card__img">
-                        <p class="product-card__price">$300</p>
+                        <p class="product-card__name">{{this.name}}</p>
+                        <img src="../img/products/{{this.category}}/{{this.image_name}}" alt="" class="product-card__img">
+                        <p class="product-card__price">{{this.price}}</p>
                         <button class="product-card__btn">Більше про товар</button>
                     </section>
-                    <section class="products-list__product-card product-card">
-                        <p class="product-card__name">Lorem ipsum dorem borem</p>
-                        <img src="../img/mtac.jpg" alt="" class="product-card__img">
-                        <p class="product-card__price">$300</p>
-                        <button class="product-card__btn">Більше про товар</button>
-                    </section>
-                    <section class="products-list__product-card product-card">
-                        <p class="product-card__name">Lorem ipsum dorem borem</p>
-                        <img src="../img/mtac.jpg" alt="" class="product-card__img">
-                        <p class="product-card__price">$300</p>
-                        <button class="product-card__btn">Більше про товар</button>
-                    </section>
-                    <section class="products-list__product-card product-card">
-                        <p class="product-card__name">Lorem ipsum dorem borem</p>
-                        <img src="../img/mtac.jpg" alt="" class="product-card__img">
-                        <p class="product-card__price">$300</p>
-                        <button class="product-card__btn">Більше про товар</button>
-                    </section>
-                    <section class="products-list__product-card product-card">
-                        <p class="product-card__name">Lorem ipsum dorem borem</p>
-                        <img src="../img/mtac.jpg" alt="" class="product-card__img">
-                        <p class="product-card__price">$300</p>
-                        <button class="product-card__btn">Більше про товар</button>
-                    </section>
-                    <section class="products-list__product-card product-card">
-                        <p class="product-card__name">Lorem ipsum dorem borem</p>
-                        <img src="../img/mtac.jpg" alt="" class="product-card__img">
-                        <p class="product-card__price">$300</p>
-                        <button class="product-card__btn">Більше про товар</button>
-                    </section>
+                    {{/each}}
                 </section>
             </section>
         </main>
