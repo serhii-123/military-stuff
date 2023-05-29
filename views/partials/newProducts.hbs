@@ -1,0 +1,14 @@
+<section class="wrapper__new-products new-products">
+    <h2 class="new-products__heading">Новинки</h2>
+    <section class="new-products__products-container">
+        {{#each newProducts}}
+        <section class="new-products__product-card product-card">
+            <p class="product-card__name">{{this.name}}</p>
+            <img src="../img/products/{{this.category}}/{{this.image_name}}" alt="" class="product-card__img">
+            <p class="product-card__price">{{this.price}} грн</p>
+            <button class="product-card__link">Більше про товар</button>
+        </section>
+        <hr class="new-products__line">
+        {{/each}}
+    </section>
+</section>

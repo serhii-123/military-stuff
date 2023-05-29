@@ -30,7 +30,7 @@
     color: rgb(200, 200, 200);
 }
 
-.product-card__btn {
+.product-card__link {
     display: block;
     width: 160px;
     margin: 0 auto;
@@ -39,6 +39,7 @@
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+    text-decoration: none;
     color: rgb(200, 200, 200);
     border: 2px solid rgb(200, 200, 200);
     border-radius: 0;

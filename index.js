@@ -9,6 +9,8 @@ const server = express();
 server.use(express.static(__dirname + '/public'));
 server.set('view engine', 'hbs');
 
+hbs.registerPartials(__dirname + "/views/partials");
+
 server.use('/', homeRouter);
 server.use('/categories', categoriesRouter);
 server.use('/product', productRouter);

@@ -25,108 +25,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="wrapper__header header">
-            <h1 class="header__heading">
-                <a class="header__heading-link">MILITARY STUFF</a>
-            </h1>
-            <p class="header__additional-text">Магазин тактичних речей</p>
-            <nav class="header__nav top-nav">
-                <ul class="top-nav__list">
-                    <li class="top-nav__item">
-                        <a href="" class="top-nav__link">Про нас</a>
-                    </li>
-                    <li class="top-nav__item">
-                        <a href="" class="top-nav__link">Контактні дані</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="header__mobile-nav-btn mobile-nav-btn mobile-nav-btn_disabled">
-                <img src="../img/icons/menu-icon.svg" alt="" class="mobile-nav-btn__img">
-            </button>
-            <nav class="header__mobile-nav mobile-nav">
-                <button class="mobile-nav__close-btn close-btn">
-                    <img src="../img/icons/close.svg" alt="" class="close-btn__img">
-                </button>
-                <ul class="mobile-nav__list">
-                    <li class="mobile-nav__item">
-                        <a href="/categories/footwear" class="mobile-nav__link">Взуття</a>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <a href="/categories/pants" class="mobile-nav__link">Штани</a>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <a href="/categories/belts" class="mobile-nav__link">Ремені</a>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <a href="/categories/glowes" class="mobile-nav__link">Рукавиці</a>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <a href="/categories/bags" class="mobile-nav__link">Сумки</a>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <a href="/categories/plate-carriers" class="mobile-nav__link">Плитоноски</a>
-                    </li>
-                </ul> 
-            </nav>
-        </header>
+        {{> header}}
         <main class="wrapper__main main">
             <section class="main__container">
-                <nav class="main__nav categories-nav">
-                    <ul class="categories-nav__list">
-                        <li class="categories-nav__item">
-                            <a href="" class="categories-nav__link">Взуття</a>
-                        </li>
-                        <li class="categories-nav__item">
-                            <a href="" class="categories-nav__link">Штани</a>
-                        </li>
-                        <li class="categories-nav__item">
-                            <a href="" class="categories-nav__link">Ремені</a>
-                        </li>
-                        <li class="categories-nav__item">
-                            <a href="" class="categories-nav__link">Рукавиці</a>
-                        </li>
-                        <li class="categories-nav__item">
-                            <a href="" class="categories-nav__link">Сумки</a>
-                        </li>
-                        <li class="categories-nav__item">
-                            <a href="" class="categories-nav__link">Плитоноски</a>
-                        </li>
-                    </ul>    
-                </nav>
-                <section class="main__most-popular most-popular">
-                    <h2 class="most-popular__heading">Частіше за все купують</h2>
-                    <section class="most-popular__products-container">
-                        {{#each firstProducts}}
-                        <section class="most-popular__product-card product-card">
-                            <p class="product-card__name">{{this.name}}</p>
-                            <img src="../img/products/{{this.category}}/{{this.image_name}}" alt="" class="product-card__img">
-                            <p class="product-card__price">{{this.price}} грн</p>
-                            <button class="product-card__btn">Більше про товар</button>
-                        </section>
-                        <hr class="most-popular__line">
-                        {{/each}}
-                    </section>
-                </section>
+                {{> categoriesNav}}
+                {{> mostPopular}}
             </section>
         </main>
-        <section class="wrapper__new-products new-products">
-            <h2 class="new-products__heading">Новинки</h2>
-            <section class="new-products__products-container">
-                {{#each newProducts}}
-                <section class="new-products__product-card product-card">
-                    <p class="product-card__name">{{this.name}}</p>
-                    <img src="../img/products/{{this.category}}/{{this.image_name}}" alt="" class="product-card__img">
-                    <p class="product-card__price">{{this.price}} грн</p>
-                    <button class="product-card__btn">Більше про товар</button>
-                </section>
-                <hr class="new-products__line">
-                {{/each}}
-            </section>
-        </section>
-        <footer class="wrapper__footer footer">
-            <p class="footer__text">Працюємо щодня з 8:00 до 17:00</p>
-            <p class="footer__text">E-mail: mstuff@gmail.com</p>
-        </footer>
+        {{> newProducts}}
+        {{> footer}}
     </div>
 </body>
 </html>

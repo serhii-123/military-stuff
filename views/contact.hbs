@@ -18,32 +18,11 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="wrapper__header header">
-            <h1 class="header__heading">
-                <a class="header__heading-link">MILITARY STUFF</a>
-            </h1>
-            <p class="header__additional-text">Магазин тактичних речей</p>
-            <nav class="header__nav top-nav">
-                <ul class="top-nav__list">
-                    <li class="top-nav__item">
-                        <a href="" class="top-nav__link">Про нас</a>
-                    </li>
-                    <li class="top-nav__item">
-                        <a href="" class="top-nav__link">Контактні дані</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        {{> header}}
         <main class="wrapper__main main">
-            <section class="main__contact-data">
-                <p class="contact-data__text">Пошта: mstuff@gmail.com</p>
-                <p class="contact-data__text">Номер: +380950000000</p>
-            </section>
+            {{> contactData}}
         </main>
-        <footer class="wrapper__footer footer">
-            <p class="footer__text">Працюємо щодня з 8:00 до 17:00</p>
-            <p class="footer__text">E-mail: mstuff@gmail.com</p>
-        </footer>
+        {{> footer}}
     </div>
 </body>
 </html>
