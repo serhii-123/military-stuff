@@ -1,9 +1,12 @@
 const db = require('../db-model/db-model');
 
 async function getFirstProducts() {
-    let result = (await db.query(`select * from product 
-                                where (select quantity from inventory where id = inventory_id) != 0
-                                limit 3`))[0];
+    let query = `select * from product 
+                where (
+                    select quantity from inventory 
+                    where id = inventory_id) != 0
+                limit 3`;
+    let result = (await db.query(query))[0];
     
     return result;
 }
