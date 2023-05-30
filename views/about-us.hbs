@@ -12,28 +12,17 @@
     <link rel="stylesheet" href="../css/wrapper.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/top-nav.css">
+    <link rel="stylesheet" href="../css/mobile-nav.css">
+    <link rel="stylesheet" href="../css/mobile-nav-btn.css">
+    <link rel="stylesheet" href="../css/close-btn.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/about-us-data.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/mobile-menu.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
-        <header class="wrapper__header header">
-            <h1 class="header__heading">
-                <a href="." class="header__heading-link">MILITARY STUFF</a>
-            </h1>
-            <p class="header__additional-text">Магазин тактичних речей</p>
-            <nav class="header__nav top-nav">
-                <ul class="top-nav__list">
-                    <li class="top-nav__item">
-                        <a href="" class="top-nav__link">Про нас</a>
-                    </li>
-                    <li class="top-nav__item">
-                        <a href="" class="top-nav__link">Контактні дані</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        {{> header}}
         <main class="wrapper__main main">
             {{> aboutUsData}}
         </main>
