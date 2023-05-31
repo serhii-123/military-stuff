@@ -46,11 +46,13 @@ async function sendData() {
     
     let data = {name, surname, patronymic, address, cardNumber, date, cvv};
     
-    let response = await fetch('http://localhost/api/order', {
+    await fetch('http://localhost/api/order', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(data)
     });
+
+    alert('Замовлення успішно оформлено');
 }
