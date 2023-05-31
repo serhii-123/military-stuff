@@ -48,9 +48,9 @@ async function sendData() {
     
     let response = await fetch('http://localhost/api/order', {
         method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
         body: JSON.stringify(data)
     });
-    let resData = await response.json();
-    console.log(resData);
-
 }

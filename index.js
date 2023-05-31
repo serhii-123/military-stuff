@@ -11,6 +11,7 @@ const paymentRouter = require('./routers/payment-router');
 const server = express();
 
 server.use(express.static(__dirname + '/public'));
+server.use(express.json());
 server.set('view engine', 'hbs');
 
 hbs.registerPartials(__dirname + "/views/partials");
