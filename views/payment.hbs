@@ -14,34 +14,36 @@
 <body>
     <div class="wrapper">
         <form class="form wrapper__form">
+            <p class="form__text">Товар: {{productInfo.name}}</p>
+            <p class="form__text">Кількість: {{quantity}}</p>
             <div class="form__data-block">
                 <label class="form__label" for="name">Ім'я</label>
                 <input class="form__text-input" type="text" id="name">
             </div>
             <div class="form__data-block">
-                <label class="form__label" for="password">Прізвище</label>
-                <input class="form__text-input" type="password" minlength="4" id="password">
+                <label class="form__label" for="surname">Прізвище</label>
+                <input class="form__text-input" type="text" minlength="4" id="surname">
             </div>
             <div class="form__data-block">
-                <label class="form__label" for="passwordConfirmation">По-батькові</label>
-                <input class="form__text-input" type="password" minlength="4" id="passwordConfirmation">
+                <label class="form__label" for="patronymic">По-батькові</label>
+                <input class="form__text-input" type="text" minlength="4" id="patronymic">
             </div>
             <div class="form__data-block">
-                <label class="form__label" for="email">Адреса доставки</label>
-                <input class="form__text-input" type="text" id="email">
+                <label class="form__label" for="address">Адреса доставки</label>
+                <input class="form__text-input" type="text" id="address">
             </div>
             <div class="form__card-data card-data">
                 <div class="card-data__number-block">
-                    <label for="" class="card-data__label">Номер картки</label>
-                    <input type="text" class="card-data__number-input">
+                    <label for="card-number" class="card-data__label">Номер картки</label>
+                    <input type="text" class="card-data__number-input" id="card-number">
                 </div>
                 <div class="card-data__date-block">
-                    <label for="" class="card-data__label">Дата</label>
-                    <input type="text" class="card-data__date-input">
+                    <label for="date" class="card-data__label">Дата</label>
+                    <input type="date" class="card-data__date-input" id="date">
                 </div>
                 <div class="card-data__cvv-block">
-                    <label for="" class="card-data__label">CVV</label>
-                    <input type="text" class="card-data__cvv-input">
+                    <label for="cvv" class="card-data__label">CVV</label>
+                    <input type="number" class="card-data__cvv-input" id="cvv">
                 </div>
             </div>
             <input class="form__btn" type="button" id="sendBtn" value="Надіслати">

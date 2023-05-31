@@ -7,6 +7,7 @@ const productRouter = require('./routers/product-router');
 const aboutUsRouter = require('./routers/about-us-router');
 const contactRouter = require('./routers/contact-router');
 const apiRouter = require('./routers/api-router');
+const paymentRouter = require('./routers/payment-router');
 const server = express();
 
 server.use(express.static(__dirname + '/public'));
@@ -20,5 +21,6 @@ server.use('/product', productRouter);
 server.use('/about-us', aboutUsRouter);
 server.use('/contact', contactRouter);
 server.use('/api', apiRouter);
+server.use('/payment', paymentRouter);
 
 server.listen(80);

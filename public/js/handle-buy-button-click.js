@@ -14,6 +14,6 @@ btn.addEventListener('click', async () => {
     if(value > quantity) {
         alert('Помилка! На складі недостатньо товарів');
     } else {
-        window.location.href = `http://localhost/buy?id=${productId}&quantity=${quantity}`;
+        window.location.href = `http://localhost/payment?id=${productId}&quantity=${value}`;
     }
 });
