@@ -128,7 +128,7 @@ html, body {
 
 .card-data__date-input, .card-data__cvv-input {
     display: block;
-    width: 50px;
+    width: 120px;
     padding: 5px;
     margin-bottom: 10px;
     font-family: 'Roboto Condensed', sans-serif;

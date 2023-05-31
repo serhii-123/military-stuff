@@ -15,7 +15,20 @@ btn.addEventListener('click', () => {
     if(surname.length == 0)
         return;
 
-    if(patronymic.length == 0) {
+    if(patronymic.length == 0)
         return;
-    }
+
+    if(address.length < 20)
+        return;
+
+    if(cardNumber.length != 16 && !parseFloat(cardNumber))
+        return;
+
+    if(date == '')
+        return;
+
+    if(cvv != 0 && cvv.toString().length != 3)
+        return;
+
+    console.log('Sus');
 });
