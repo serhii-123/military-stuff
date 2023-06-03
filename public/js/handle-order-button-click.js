@@ -40,6 +40,8 @@ btn.addEventListener('click', () => {
 });
 
 async function sendData() {
+    let urlParams = new URLSearchParams(window.location.search);
+
     let name = document.getElementById('name').value;
     let surname = document.getElementById('surname').value;
     let patronymic = document.getElementById('patronymic').value;
@@ -48,10 +50,12 @@ async function sendData() {
     let cardNumber = document.getElementById('card-number').value;
     let date = document.getElementById('date').value;
     let cvv = document.getElementById('cvv').value;
+    let productId = urlParams.get('id');
+    let quantity = urlParams.get('quantity');
     
-    let data = {name, surname, patronymic, address, cardNumber, date, cvv};
+    let data = {name, surname, patronymic, phoneNumber, address, cardNumber, date, cvv, productId, quantity};
     
-    await fetch('http://localhost/api/order', {
+    let response = await fetch('http://localhost/api/order', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -60,4 +64,6 @@ async function sendData() {
     });
 
     alert('Замовлення успішно оформлено');
+
+    window.location.href='/';
 }
