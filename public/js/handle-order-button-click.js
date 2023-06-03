@@ -4,6 +4,7 @@ btn.addEventListener('click', () => {
     let name = document.getElementById('name').value;
     let surname = document.getElementById('surname').value;
     let patronymic = document.getElementById('patronymic').value;
+    let phoneNumber = document.getElementById('phone-number').value;
     let address = document.getElementById('address').value;
     let cardNumber = document.getElementById('card-number').value;
     let date = document.getElementById('date').value;
@@ -16,6 +17,9 @@ btn.addEventListener('click', () => {
         return;
 
     if(patronymic.length == 0)
+        return;
+
+    if(!parseFloat(phoneNumber))
         return;
 
     if(address.length < 20)
@@ -39,6 +43,7 @@ async function sendData() {
     let name = document.getElementById('name').value;
     let surname = document.getElementById('surname').value;
     let patronymic = document.getElementById('patronymic').value;
+    let phoneNumber = document.getElementById('phone-number').value;
     let address = document.getElementById('address').value;
     let cardNumber = document.getElementById('card-number').value;
     let date = document.getElementById('date').value;
