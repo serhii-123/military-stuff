@@ -1,7 +1,7 @@
 const express = require('express');
-const router = express.Router();
 const sendAdminPage = require('../controllers/admin-panel-router/sendAdminPage');
+const router = express.Router();
 
 router.get('/', sendAdminPage);
 
-module.exports - sendAdminPage();
+module.exports = router;

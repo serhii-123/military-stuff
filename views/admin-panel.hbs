@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin-panel.css">
 </head>
 <body>
     <div class="wrapper">
@@ -25,7 +29,7 @@
                 </div>
                 <div class="form__input-block">
                     <label for="quantity" class="form__label">Кількість</label>
-                    <input type="text" class="form__input" id="quantity" name="quantity">
+                    <input type="number" class="form__input" id="quantity" name="quantity">
                 </div>
                 <div class="form__input-block">
                     <label for="category" class="form__label">Тип</label>
@@ -42,10 +46,23 @@
                     <label for="image-name" class="form__label">Назва зображення</label>
                     <input type="text" class="form__input" id="image-name" name="image-name">
                 </div>
+                <button class="form__btn">Додати</button>
             </form>
 
             <section class="main__orders orders">
-                
+                {{#each orders}}
+                <div class="orders__order order">
+                    <p class="order__text">Назва товару: {{this.product_name}}</p>
+                    <p class="order__text">Кількість: {{this.quantity}}</p>
+                    <p class="order__text">Сума: {{this.sum}}</p>
+                    <p class="order__text">Ім'я клієнта: {{this.name}}</p>
+                    <p class="order__text">Прізвище клієнта: {{this.surname}}</p>
+                    <p class="order__text">По батькові клієнта: {{this.patronymic}}</p>
+                    <p class="order__text">Номер клієнта: {{this.phone_number}}</p>
+                    <p class="order__text">Адреса: {{this.address}}</p>
+                </div>
+                {{/each}}
+                </div>
             </section>
         </main>
     </div>
