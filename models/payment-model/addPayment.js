@@ -8,3 +8,5 @@ async function addPayment(number, date, cvv) {
 
     return paymentId
 }
+
+module.exports = addPayment;

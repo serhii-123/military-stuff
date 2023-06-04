@@ -1,5 +1,6 @@
 const addPayment = require('../../models/payment-model/addPayment');
 const addOrder = require('../../models/payment-model/addOrder');
+const updateInventory = require('../../models/payment-model/updateInventory');
 
 async function createOrder(req, res) {
     let data = req.body;

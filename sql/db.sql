@@ -15,8 +15,12 @@ create table `order` (
     patronymic text,
     phone_number text,
     payment_id int,
+    address text,
+    product_id int
+    quantity int
     primary key (id),
-	foreign key (payment_id) references payment(id)
+	foreign key (payment_id) references payment(id),
+    foreign key (product_id) references product(id)
 );
 
 create table inventory (

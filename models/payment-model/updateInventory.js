@@ -9,3 +9,5 @@ async function updateInventory(productId, quantity) {
     
     await db.query(inventoryQuery);
 }
+
+module.exports = updateInventory;
