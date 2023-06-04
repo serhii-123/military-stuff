@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main class="wrapper__main main">
+            <form class="main__form form">
+                <h2 class="form__heading">Додати товар</h2>
+                <div class="form__input-block">
+                    <label for="name" class="form__label">Назва</label>
+                    <input type="text" class="form__input" id="name" name="name">
+                </div>
+                <div class="form__input-block">
+                    <label for="description" class="form__label">Опис</label>
+                    <input type="text" class="form__input" id="description" name="description">
+                </div>
+                <div class="form__input-block">
+                    <label for="price" class="form__label">Ціна</label>
+                    <input type="number" class="form__input" id="price" name="price">
+                </div>
+                <div class="form__input-block">
+                    <label for="quantity" class="form__label">Кількість</label>
+                    <input type="text" class="form__input" id="quantity" name="quantity">
+                </div>
+                <div class="form__input-block">
+                    <label for="category" class="form__label">Тип</label>
+                    <select type="text" class="form__input" id="category" name="category">
+                        <option>Взуття</option>
+                        <option>Штани</option>
+                        <option>Ремені</option>
+                        <option>Рукавиці</option>
+                        <option>Сумки</option>
+                        <option>Плитоноски</option>
+                    </select>
+                </div>
+                <div class="form__input-block">
+                    <label for="image-name" class="form__label">Назва зображення</label>
+                    <input type="text" class="form__input" id="image-name" name="image-name">
+                </div>
+            </form>
+
+            <section class="main__orders orders">
+                
+            </section>
+        </main>
+    </div>
+</body>
+</html>

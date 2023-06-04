@@ -8,6 +8,7 @@ const aboutUsRouter = require('./routers/about-us-router');
 const contactRouter = require('./routers/contact-router');
 const apiRouter = require('./routers/api-router');
 const paymentRouter = require('./routers/payment-router');
+const adminPanelRouter = require('./routers/admin-panel-router');
 const server = express();
 
 server.use(express.static(__dirname + '/public'));
@@ -23,5 +24,6 @@ server.use('/about-us', aboutUsRouter);
 server.use('/contact', contactRouter);
 server.use('/api', apiRouter);
 server.use('/payment', paymentRouter);
+server.use('/admin-panel', adminPanelRouter);
 
 server.listen(80);
