@@ -35,6 +35,7 @@ create table `order` (
     address text,
     product_id int,
     quantity int,
+    sum int,
     primary key (id),
 	foreign key (payment_id) references payment(id),
     foreign key (product_id) references product(id)
