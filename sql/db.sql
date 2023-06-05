@@ -8,21 +8,6 @@ create table payment (
     card_cvv int
 );
 
-create table `order` (
-	id int auto_increment,
-    `name` text,
-    surname text,
-    patronymic text,
-    phone_number text,
-    payment_id int,
-    address text,
-    product_id int
-    quantity int
-    primary key (id),
-	foreign key (payment_id) references payment(id),
-    foreign key (product_id) references product(id)
-);
-
 create table inventory (
 	id int auto_increment primary key,
     quantity int
@@ -40,8 +25,17 @@ create table product(
     foreign key (inventory_id) references inventory (id)
 );
 
-create table admin (
-	id int auto_increment primary key,
-    username text,
-    `password` text
+create table `order` (
+	id int auto_increment,
+    `name` text,
+    surname text,
+    patronymic text,
+    phone_number text,
+    payment_id int,
+    address text,
+    product_id int,
+    quantity int,
+    primary key (id),
+	foreign key (payment_id) references payment(id),
+    foreign key (product_id) references product(id)
 );
