@@ -1,7 +1,7 @@
 const db = require('../db-model/db-model');
 const getProductPrice = require('./getProductPrice');
 
-async function addPayment(name, surname, patronymic, phoneNumber, paymentId, address, productId, quantity) {
+async function addOrder(name, surname, patronymic, phoneNumber, paymentId, address, productId, quantity) {
     let productPrice = await getProductPrice(productId);
     let sum = quantity * productPrice;
     let orderQuery = `insert into \`order\` (name, 
@@ -26,4 +26,4 @@ async function addPayment(name, surname, patronymic, phoneNumber, paymentId, add
     await db.query(orderQuery);
 }
 
-module.exports = addPayment;
+module.exports = addOrder;
