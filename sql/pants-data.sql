@@ -111,4 +111,3 @@ INSERT INTO product (
     FROM inventory
     order by id desc
     limit 1));
-    
