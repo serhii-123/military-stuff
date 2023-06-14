@@ -108,7 +108,7 @@ INSERT INTO product (
       даючи, в тому числі, можливість використовувати його при проходженні через ворота в аеропортах і подібних охоронюваних входах в будівлі.",
     "belts",
     750,
-    "Helikon_UTL_Urban_Tactical/jpg",
+    "Helikon_UTL_Urban_Tactical.jpg",
     (SELECT id
     FROM inventory
     order by id desc
